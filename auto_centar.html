@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Auto centar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-hide">
+            <a href="">Akcija</a>
+          </li>
+          <li class="nav-hide">
+            <a href="">Naša priča</a>
+          </li>
+          <li class="nav-image">
+            <a href=""><img src="https://i.ibb.co/cXh6GXGK/car-logo.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="">Informacije</a>
+          </li>
+          <li class="nav-more">
+            <a href="">Više</a>
+          </li>
+          <li class="nav-hide">
+            <a href="">Ponuda</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="sellers">
+        <h1>Prodajne lokacije</h1>
+        <div class="locations">
+          <div>
+            <h2>Auto centar Gavrić</h2>
+            <p>Adresa: <span>Gaudijeva 13, Novi Sad</span></p>
+          </div>
+          <div>
+            <h2>Auto centar Ivković</h2>
+            <p>Adresa: <span>Mihaila Pupina 2, Novi Sad</span></p>
+          </div>
+          <div>
+            <h2>Auto centar Klisa</h2>
+            <p>Adresa: <span>Ilije Birčanina 23, Novi Sad</span></p>
+          </div>
+          <div>
+            <h2>Auto Centar Liman</h2>
+            <p>Adresa: <span>Pabla Pikasa 3, Novi Sad</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="cars">
+        <form method="post">
+          <div class="dream-car">
+            <img src="https://i.ibb.co/v4TJT978/blue-car.png" />
+            <div class="description">
+              <h4>Izračunaj cenu svog auta iz snova</h4>
+              <p>Počevši od 7 899€</p>
+            </div>
+          </div>
+          <div class="calculator">
+            <div>
+              <label for="model">Model automobila</label>
+              <select id="model" name="model">
+                <option value="nido">Nidorino</option>
+                <option value="bulba">Bulbasaur</option>
+                <option value="mar">Mareep</option>
+                <option value="char">Charizard</option>
+              </select>
+            </div>
+            <div>
+              <label for="engine">Tip motora</label>
+              <select id="engine" name="engine">
+                <option value="dizel">Dizel</option>
+                <option value="benzin">Benzin</option>
+                <option value="hyrid">Hibrid</option>
+              </select>
+            </div>
+            <div>
+              <label for="car-color">Boja automobila</label>
+              <input type="color" id="car-color" name="color" value="#4776ba" />
+            </div>
+            <div class="car-color">
+              <label for="shiny">Tip boje automobila</label>
+              <label for="shiny">Sjajna boja</label>
+              <input type="radio" name="shiny" value="shiny" checked />
+              <label for="no-shiny">Mat boja</label>
+              <input type="radio" name="shiny" value="no-shiny" />
+            </div>
+            <div>
+              <label for="price">Opseg cene</label>
+              <span>7 899€ </span
+              ><input type="range" name="price" id="price" min="7899" max="43799" /><span>
+                43 799€</span
+              >
+            </div>
+            <div>
+              <label for="contact">Kontakt mejl</label>
+              <input type="email" name="contact" id="contact" required />
+            </div>
+            <div>
+              <input type="submit" value="Posalji upit" />
+            </div>
+            <div>
+              <input type="reset" value="Resetuj formu" />
+            </div>
+          </div>
+        </form>
+        <div class="offers">
+          <div>
+            <img src="https://i.ibb.co/tPJPSQK6/renault1.png" />
+            <p>Već od 40 639€</p>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/hFqJfRNr/renault2.png" />
+            <p>Već od 27 629€</p>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/gLwnYZqs/renault3.png" />
+            <p>Već od 3 679€</p>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/vvKK2s4K/renault4.png" />
+            <p>Već od 22 199€</p>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/Gv0BV1Lz/renault5.png" />
+            <p>Već od 13 299€</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="">Pravna obaveštenja</a>
+      <a href="">Politika privatnosti</a>
+      <a href="">Kolačići</a>
+      <a href="">Opšti podaci o kompaniji</a>
+      <a href="">© CarAuto-Srbija</a>
+    </footer>
+  </body>
+</html>
