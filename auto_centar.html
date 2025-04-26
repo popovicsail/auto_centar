@@ -87,17 +87,16 @@
             </div>
             <div class="car-color">
               <label for="shiny">Tip boje automobila</label>
-              <label for="shiny">Sjajna boja</label>
-              <input type="radio" name="shiny" value="shiny" checked />
-              <label for="no-shiny">Mat boja</label>
-              <input type="radio" name="shiny" value="no-shiny" />
+              <label for="shiny">Sjajna boja<input type="radio" name="shiny" value="shiny" checked /></label>            
+              <label for="no-shiny">Mat boja<input type="radio" name="shiny" value="no-shiny" /></label>             
             </div>
-            <div>
+            <div class="slider">
               <label for="price">Opseg cene</label>
-              <span>7 899€ </span
-              ><input type="range" name="price" id="price" min="7899" max="43799" /><span>
-                43 799€</span
-              >
+                <div class="slider-range">
+                  <span>7.899€</span>
+                  <input type="range" name="price" id="price" min="7899" max="43799" />
+                  <span>43.799€</span>
+                </div>
             </div>
             <div>
               <label for="contact">Kontakt mejl</label>
@@ -140,7 +139,7 @@
       <a href="">Politika privatnosti</a>
       <a href="">Kolačići</a>
       <a href="">Opšti podaci o kompaniji</a>
-      <a href="">© CarAuto-Srbija</a>
+      <a class="footer-c" href="">© CarAuto-Srbija</a>
     </footer>
   </body>
 </html>

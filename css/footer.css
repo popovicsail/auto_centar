@@ -13,5 +13,8 @@ footer a {
   text-decoration: none;
   color: white;
 }
+footer a.footer-c {
+  margin-left: 30%;
+}
 
 /*# sourceMappingURL=footer.css.map */
