@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'body';
+@use 'header';
+@use 'footer';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+
+

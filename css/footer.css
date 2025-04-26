@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  background-color: #3e84b6;
+  margin: 0px;
+  height: 50px;
+  padding: 0px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=footer.css.map */

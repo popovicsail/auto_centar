@@ -1,0 +1,15 @@
+$breakpoint-extra-small: 576px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px; 
+
+$background-color: #dde0e9;
+$sales-location-color: rgba(255, 255, 255, 0.7);
+$primary-color: #3e84b6;
+$secondary-color: #b96d34;
+
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+      @content;
+    }
+  }
