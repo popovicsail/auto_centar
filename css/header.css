@@ -13,6 +13,16 @@ header nav ul li a {
   text-decoration: none;
   color: #3e84b6;
 }
+@media (max-width: 992px) {
+  header nav ul li.nav-hide a.hide {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav ul li.nav-hide a {
+    display: none;
+  }
+}
 header nav ul li.nav-image img {
   width: 50px;
 }

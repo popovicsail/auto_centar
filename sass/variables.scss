@@ -13,3 +13,21 @@ $secondary-color: #b96d34;
       @content;
     }
   }
+
+
+@include responsive ($breakpoint-large) {
+}
+
+@include responsive ($breakpoint-medium) {
+}
+
+@include responsive ($breakpoint-small) {
+}
+
+@include responsive ($breakpoint-extra-small) {
+}
+
+
+
+
+

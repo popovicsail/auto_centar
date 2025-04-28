@@ -9,6 +9,11 @@ section.sellers {
     padding-left: 50px;
     padding-right: 50px;
 
+    @include responsive ($breakpoint-small) {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
     h1 {
         margin: 0;
         padding: 0;
@@ -17,7 +22,11 @@ section.sellers {
     div.locations {
         display:flex;
         justify-content: space-evenly; 
-        
+
+        @include responsive ($breakpoint-small) {
+            flex-direction: column-reverse;
+            padding-bottom: 0px;
+        }
         
         div {
             display: flex;
@@ -29,13 +38,16 @@ section.sellers {
             border-radius: 20px;
             
             padding: 10px;
-            margin: 10px;        
+            margin: 10px;
+
+            border: 2px solid transparent;
+            transition: border-color 1s ease, color 1s ease;
+            
+            &:hover {
+                border-color: $primary-color;
+            }
         }
         
-        h2 {
-            margin: 0px;
-        }
-
         span {
             color: $secondary-color;
         }
@@ -45,6 +57,9 @@ section.sellers {
 section.cars {
     display: flex;
 
+    @include responsive ($breakpoint-medium) {
+        flex-direction: column-reverse;
+    }
 
     form {
         background-color: $background-color;
@@ -55,13 +70,24 @@ section.cars {
         width: 60%;
         border: 2px solid $primary-color;
 
+        @include responsive ($breakpoint-medium) {
+            width: 100%;
+        }
     }
 
     div.dream-car {
         display:flex;
 
+        @include responsive ($breakpoint-small) {
+            flex-direction: column-reverse;
+        }
+
         img {
             width: 70%;
+
+            @include responsive ($breakpoint-small) {
+                width: 100%;
+            }
         }
 
         div.description {
@@ -71,6 +97,19 @@ section.cars {
             width: 30%;
             font-size: 30px;
             text-align: center;
+
+            @include responsive ($breakpoint-small) {
+                width: 100%;
+            }
+
+            h4 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                font-size: 36px;
+            }
         }
     }
 
@@ -152,6 +191,15 @@ section.cars {
         margin: 20px;
         gap: 20px;
 
+        @include responsive ($breakpoint-medium) {
+            width: 100%;
+        }
+
+        @include responsive ($breakpoint-small) {
+            flex-direction: column;
+            width: 100%;
+        }
+
         div {
             display: flex;
             flex-direction: column;
@@ -163,6 +211,10 @@ section.cars {
             border-width: 5px;
             border: 2px solid $primary-color;
 
+            @include responsive ($breakpoint-small) {
+                width: 100%;
+            }
+
             img {
                 width: 100%;
             }
@@ -170,6 +222,10 @@ section.cars {
 
         div.best-offer {
             width: 80%;
+
+            @include responsive ($breakpoint-small) {
+                width: 100%;
+            }
         }
     }
 }

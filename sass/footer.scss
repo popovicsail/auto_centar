@@ -11,6 +11,20 @@ footer {
     height: 50px;
     padding: 0px;
 
+    @include responsive ($breakpoint-medium) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    @include responsive ($breakpoint-small) {
+        flex-direction: column;
+        height: fit-content;
+        gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     a {                 
         text-decoration: none;
         color: white;
@@ -18,5 +32,13 @@ footer {
 
     a.footer-c {
         margin-left: 30%;
+
+        @include responsive ($breakpoint-medium) {
+            margin-left: 0%;
+        }
+
+        @include responsive ($breakpoint-small) {
+            margin-top: 5%;
+        }
     }
 }
